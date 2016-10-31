@@ -15,7 +15,7 @@ class MainTableViewController: UITableViewController {
     let kCloseCellHeight: CGFloat = 179
     let kOpenCellHeight: CGFloat = 488
 
-    let kRowsCount = 10
+    let kRowsCount = 3
     
     var cellHeights = [CGFloat]()
 
@@ -39,7 +39,7 @@ extension MainTableViewController{
 
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return kRowsCount
     }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

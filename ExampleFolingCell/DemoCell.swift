@@ -11,10 +11,13 @@ import FoldingCell
 
 class DemoCell: FoldingCell {
   
+    
+    @IBOutlet weak var avatarImgCell: UIImageView!
+
   override func awakeFromNib() {
     
-    foregroundView.layer.cornerRadius = 10
-    foregroundView.layer.masksToBounds = true
+    avatarImgCell.layer.cornerRadius = 64
+    avatarImgCell.layer.masksToBounds = true
     
     super.awakeFromNib()
   }

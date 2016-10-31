@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0cn-rv-Emg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CQR-Su-UxW">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,15 +27,47 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQr-i9-7br" userLabel="Foreground" customClass="RotatedView" customModule="FoldingCell">
                                             <rect key="frame" x="20" y="7" width="560" height="165"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="javi_bn" translatesAutoresizingMaskIntoConstraints="NO" id="xSF-jc-AYF">
+                                                    <rect key="frame" x="16" y="18" width="128" height="129"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="GN7-Yl-1hx"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username: Javier" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoh-JM-bUk">
+                                                    <rect key="frame" x="151" y="72" width="402" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="qoh-JM-bUk" firstAttribute="top" secondItem="CQr-i9-7br" secondAttribute="top" constant="72" id="4lf-yk-97N"/>
+                                                <constraint firstItem="xSF-jc-AYF" firstAttribute="leading" secondItem="CQr-i9-7br" secondAttribute="leading" constant="16" id="77w-xO-woZ"/>
+                                                <constraint firstItem="qoh-JM-bUk" firstAttribute="leading" secondItem="xSF-jc-AYF" secondAttribute="trailing" constant="7" id="CH5-MZ-XHR"/>
+                                                <constraint firstAttribute="bottom" secondItem="xSF-jc-AYF" secondAttribute="bottom" constant="18" id="QFQ-M9-Tf4"/>
                                                 <constraint firstAttribute="height" constant="165" id="bfl-Uq-i0I"/>
+                                                <constraint firstAttribute="bottom" secondItem="qoh-JM-bUk" secondAttribute="bottom" constant="72" id="hcH-FA-tUK"/>
+                                                <constraint firstItem="xSF-jc-AYF" firstAttribute="top" secondItem="CQr-i9-7br" secondAttribute="top" constant="18" id="lyg-uX-r3v"/>
+                                                <constraint firstAttribute="trailing" secondItem="qoh-JM-bUk" secondAttribute="trailing" constant="7" id="sjn-XD-Gdf"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGm-93-iX0" userLabel="Contener">
                                             <rect key="frame" x="20" y="180" width="560" height="479"/>
-                                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username: Javier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cya-oG-Oze">
+                                                    <rect key="frame" x="10" y="15" width="540" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstItem="Cya-oG-Oze" firstAttribute="top" secondItem="CGm-93-iX0" secondAttribute="top" constant="15" id="LK8-Z2-BUn"/>
+                                                <constraint firstItem="Cya-oG-Oze" firstAttribute="leading" secondItem="CGm-93-iX0" secondAttribute="leading" constant="10" id="Ldd-Ka-YOE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cya-oG-Oze" secondAttribute="trailing" constant="10" id="dwv-JA-bKB"/>
                                                 <constraint firstAttribute="height" constant="479" id="llk-Zn-ick"/>
                                             </constraints>
                                         </view>
@@ -60,6 +92,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="avatarImgCell" destination="xSF-jc-AYF" id="FTf-q7-HfC"/>
                                     <outlet property="containerView" destination="CGm-93-iX0" id="gSm-z4-RdG"/>
                                     <outlet property="containerViewTop" destination="wys-AY-Zdw" id="Exs-1v-4Jn"/>
                                     <outlet property="foregroundView" destination="CQr-i9-7br" id="88q-9Z-PtA"/>
@@ -72,12 +105,32 @@
                             <outlet property="delegate" destination="0cn-rv-Emg" id="o83-eX-gao"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="ixC-5C-5ac"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="695"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WxO-6i-Q9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="43" y="296"/>
+            <point key="canvasLocation" x="41.600000000000001" y="295.50224887556226"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4hh-Y5-saA">
+            <objects>
+                <navigationController id="CQR-Su-UxW" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bfY-R6-aLZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0cn-rv-Emg" kind="relationship" relationship="rootViewController" id="j5g-MI-qYM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99C-fa-jaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-956" y="296"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="javi_bn" width="1234" height="1232"/>
+    </resources>
 </document>
