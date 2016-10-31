@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F9C16AAF1DC7168800E42309"
-               BuildableName = "ExampleFolingCell.app"
-               BlueprintName = "ExampleFolingCell"
-               ReferencedContainer = "container:ExampleFolingCell.xcodeproj">
+               BlueprintIdentifier = "790D3ED0C42361BE9C649AF0394A5D59"
+               BuildableName = "Pods_ExampleFolingCell.framework"
+               BlueprintName = "Pods-ExampleFolingCell"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9C16AAF1DC7168800E42309"
-            BuildableName = "ExampleFolingCell.app"
-            BlueprintName = "ExampleFolingCell"
-            ReferencedContainer = "container:ExampleFolingCell.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9C16AAF1DC7168800E42309"
-            BuildableName = "ExampleFolingCell.app"
-            BlueprintName = "ExampleFolingCell"
-            ReferencedContainer = "container:ExampleFolingCell.xcodeproj">
+            BlueprintIdentifier = "790D3ED0C42361BE9C649AF0394A5D59"
+            BuildableName = "Pods_ExampleFolingCell.framework"
+            BlueprintName = "Pods-ExampleFolingCell"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F9C16AAF1DC7168800E42309"
-            BuildableName = "ExampleFolingCell.app"
-            BlueprintName = "ExampleFolingCell"
-            ReferencedContainer = "container:ExampleFolingCell.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
